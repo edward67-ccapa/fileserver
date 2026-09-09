@@ -118,6 +118,8 @@ return [
 
     'asset_url' => env('ASSET_URL', env('APP_URL')),
 
+    'update_uri' => env('LIVEWIRE_UPDATE_URI', null),
+
     /*
     |---------------------------------------------------------------------------
     | Navigate (SPA mode)
