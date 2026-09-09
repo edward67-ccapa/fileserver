@@ -24,11 +24,11 @@ class AppServiceProvider extends ServiceProvider
         }
 
         \Livewire\Livewire::setScriptRoute(function ($handle) {
-            return \Illuminate\Support\Facades\Route::get('/livewire/livewire.js', $handle);
+            return \Illuminate\Support\Facades\Route::get('/fileserver/public/livewire/livewire.js', $handle);
         });
 
         \Livewire\Livewire::setUpdateRoute(function ($handle) {
-            return \Illuminate\Support\Facades\Route::post('/livewire/update', $handle);
+            return \Illuminate\Support\Facades\Route::post('/fileserver/public/livewire/update', $handle);
         });
     }
 }

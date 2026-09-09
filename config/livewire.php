@@ -116,9 +116,9 @@ return [
 
     'inject_assets' => true,
 
-    'asset_url' => '/fileserver/public/livewire/livewire.js',
+    'asset_url' => null,
 
-    'update_uri' => '/fileserver/public/livewire/update',
+    'update_uri' => null,
 
     /*
     |---------------------------------------------------------------------------
