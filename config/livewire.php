@@ -116,9 +116,9 @@ return [
 
     'inject_assets' => true,
 
-    'asset_url' => null,
+    'asset_url' => rtrim(env('ASSET_URL', env('APP_URL', 'https://ccapa-ia.com/fileserver/public')), '/') . '/livewire/livewire.js',
 
-    'update_uri' => env('LIVEWIRE_UPDATE_URI', null),
+    'update_uri' => rtrim(env('ASSET_URL', env('APP_URL', 'https://ccapa-ia.com/fileserver/public')), '/') . '/livewire/update',
 
     /*
     |---------------------------------------------------------------------------
